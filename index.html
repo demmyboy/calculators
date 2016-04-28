@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>WireDelta Task</title>
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!--Task 1, The Age calculator app -->
+      <div class="task">
+         <h2>Task 1</h2>
+         <h3>The Age Calculator</h3>
+         <p>Its not your fault that you have forgotten your age. Lets Calculate it for you!  </p>
+         <label for="birthYear">What year were you born?</label>
+         <input type="text" id="birthYear" placeholder="Birth Year">
+         <button id="ageConvert" onclick="calculateAge()">AGE</button>
+         <p id="ageConfirm"></p>
+      </div>
+      <!--Task 2, the life supplier app -->
+      <div class="task">
+         <h2>Task 2</h2>
+         <h3>The life time Supplier</h3>
+         <p>Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more! This mini calculator is going to help out</p>
+         <label for="age">How old are you?</label>
+         <input type="text" id="age" placeholder="Present Age">
+         <label>How many Bottles do u drink in a Day?</label>
+         <input type="text" id="bottlePerDay">
+         <label>What Age will you stop Drinking? (Hopefully !!!)</label>
+         <input type="text" id="maxAge" placeholder="Expected Age">
+         <button id="supplyConvert" onclick="calculateSupply()">Find Out Here</button>
+         <p id="output"></p>
+      </div>
+      <!--Task 3, the geometrizer -->
+      <div class="task">
+         <h2>Task 3</h2>
+         <h3>The Geometrizer</h3>
+         <p>This application is used to calculate the circumfrence and Area of circle</p>
+         <div id="circle"></div>
+         <label for="radius">Enter Radius:</label>
+         <input type="text" id="radius" placeholder="Radius">
+         <button id="Calculate" onclick="calcCircumfrence()">Circumfrence</button>
+         <button id="Calculate2" onclick="calcArea()">Area</button>
+         <p id="output1"></p>
+      </div>
+      <!--Task 4, the temperature converter -->
+      <div class="task">
+         <h2>Task 4</h2>
+         <h3>Temperature Converter</h3>
+         <p>It's hot out! Dont Worry, this temperature converter will help out when you travel to Countries where temperature is measured differently </p>
+         <label>Celsius:</label>
+         <input type="text" id="celsius" placeholder="Celsius">
+         <button id="convert1" onclick="celsiusToFahrenheit()">Convert to F</button><br>
+         <label>Fahrenheit:</label>
+         <input type="text" id="fahrenheit" placeholder="Fahrenheit">
+         <button id="convert2" onclick="fahrenheitToCelsius()">Convert to C</button>
+         <p id="result"></p>
+      </div>
+      <!--The script tag links to the external Javascript file -->
+      <script src="js/main.js"></script> 
+   </body>
+</html>
